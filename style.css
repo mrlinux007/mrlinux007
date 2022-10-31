@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,0.75));
+    background-size: cover;
+    background-position: center;
+}    
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.pl-ay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .pl-ay {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .pl-ay{
+        width: auto;
+        height: 100%;
+    }
+}
+.logo {
+    width: 120px;
+    cursor: pointer; 
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+    
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-family: fantasy;
+    text-shadow: 2px 3px 4px black;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: 0.5s;
+    background: #00FFE7;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+.h2 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    text-align: center;
+    color: #fff;
+}
+.h2 h1 {
+    font-size: 70px;
+    margin: 80px;
+    font-family: fantasy;
+    text-shadow: 2px 2px 5px #39D3C5;
+}
+.content p {
+    margin: 250px auto;
+    font-family: cursive;
+    line-height: 100%;
+    font-weight: 100;
+    text-shadow: 2px 2px black;
+    position: relative;
+}
+.btn a {
+	position: absolute;
+	text-decoration: none;
+    width: 400px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 305px 450px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #00FFE7;
+    background: transparent;
+    color: #fff;
+    font-family: fantasy;
+	box-shadow: inset 0 0 0 0 white;
+    align-items: center;
+    transition: ease-out .5s;
+    
+
+}
+.hello {
+    background:#009688;
+    width: 0%;
+    height: 100%;
+    border-radius: 25px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.btn a:hover {
+    box-shadow: inset 400px 0 0 0 #00D8FF;
+    text-shadow: 2px 2px 5px black;
+    transform: scale(1.1);
+}
+
